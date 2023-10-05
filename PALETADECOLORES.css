@@ -1,0 +1,49 @@
+.bg4,
+.left-content1 {
+  position: absolute;
+  left: 0;
+  width: 625px;
+  height: 233px;
+}
+.bg4 {
+  top: 0;
+  background-color: var(--color-midnightblue);
+}
+.left-content1 {
+  top: 31px;
+}
+.bg5 {
+  top: 0;
+  background-color: var(--color-royalblue);
+  width: 625px;
+}
+.bg5,
+.bg6,
+.left-content2,
+.left-content3 {
+  position: absolute;
+  left: 0;
+  height: 233px;
+}
+.left-content2 {
+  top: 274px;
+  width: 625px;
+}
+.bg6,
+.left-content3 {
+  width: 524px;
+}
+.bg6 {
+  top: 0;
+  background-color: var(--color-darkslategray-200);
+}
+.left-content3 {
+  top: 531px;
+}
+.paleta-de-colores {
+  position: relative;
+  background-color: var(--base-white);
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}

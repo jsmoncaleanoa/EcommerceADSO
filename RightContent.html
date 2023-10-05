@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./RightContent.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <form class="right-content">
+      <div class="title">
+        <b class="registro">Registro</b>
+        <div class="registrate-para-comenzar">Registrate para comenzar</div>
+      </div>
+      <div class="name-parent">
+        <div class="name">
+          <div class="placeholder">
+            <div class="nombre">Nombre</div>
+            <img class="bxbxs-user-icon" alt="" src="./public/bxbxsuser.svg" />
+          </div>
+        </div>
+        <div class="name">
+          <div class="placeholder1">
+            <div class="nombre">Correro electronico</div>
+            <img class="codiconmail" alt="" src="./public/codiconmail.svg" />
+          </div>
+        </div>
+        <div class="name">
+          <div class="placeholder2">
+            <div class="nombre">Celular</div>
+            <img class="codiconmail" alt="" src="./public/codiconmail1.svg" />
+          </div>
+        </div>
+        <div class="name">
+          <div class="placeholder3">
+            <div class="nombre">Contraseña</div>
+            <img class="codiconmail" alt="" src="./public/bxbxslockalt.svg" />
+          </div>
+        </div>
+        <div class="name">
+          <div class="placeholder4">
+            <div class="confirmar-contrasea">Confirmar Contraseña</div>
+            <img class="codiconmail" alt="" src="./public/bxbxslockalt.svg" />
+          </div>
+        </div>
+        <div class="button" id="buttonContainer">
+          <div class="placeholder5">
+            <div class="registrar">Registrar</div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      </script>
+  </body>
+</html>

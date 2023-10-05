@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./Pijamas.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="pijamas">
+      <img class="pijamas-child" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="frame-div">
+        <div class="container3">
+          <div class="nav-category-wrapper1">
+            <nav class="nav-category3">
+              <div class="button9" id="buttonContainer">
+                <img
+                  class="lightning-01-icon3"
+                  alt=""
+                  src="./public/lightning01.svg"
+                />
+
+                <div class="pr3">Solicitar producto</div>
+                <img
+                  class="lightning-01-icon3"
+                  alt=""
+                  src="./public/chevrondown.svg"
+                />
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <header class="header3">
+        <div class="header-child1"></div>
+        <div class="text6">Comprando - Username</div>
+      </header>
+      <section class="pie3">
+        <div class="pie-child3"></div>
+        <div class="trminos-y-condiciones-container3">
+          <p class="trminos-y-condiciones6">
+            <b class="trminos-y-condiciones7">Términos y condiciones</b>
+            <span class="span3"> </span>
+          </p>
+          <p class="todos-los-derechos3">
+            ® 2023-2023 Todos los derechos reservados
+          </p>
+        </div>
+        <img class="imagen-3-icon3" alt="" src="./public/imagen-3@2x.png" />
+
+        <img class="imagen-4-icon3" alt="" src="./public/imagen-4@2x.png" />
+
+        <div class="imagen-53"></div>
+        <div class="pie-child4"></div>
+      </section>
+      <img
+        class="featured-icon3"
+        alt=""
+        src="./public/featured-icon.svg"
+        id="featuredIcon"
+      />
+
+      <h1 class="nuestros-productos2">Nuestros productos</h1>
+      <div class="pijama-1">Pijama #1</div>
+      <div class="pijamas-item"></div>
+      <div class="editar24">Editar</div>
+      <div class="editar24">Editar</div>
+      <img class="pijamas-inner" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="pijama-2">Pijama #2</div>
+      <div class="pijamas-child1"></div>
+      <div class="editar26">Editar</div>
+      <div class="editar26">Editar</div>
+      <img class="pijamas-child2" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="pijama-3">Pijama #3</div>
+      <div class="pijamas-child3"></div>
+      <div class="editar28">Editar</div>
+      <div class="editar28">Editar</div>
+      <img class="pijamas-child4" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="pijama-4">Pijama #4</div>
+      <div class="pijamas-child5"></div>
+      <div class="editar30">Editar</div>
+      <div class="editar30">Editar</div>
+      <div class="busqueda3">
+        <div class="categorias3">
+          <div class="todas3">Todas las categorias</div>
+          <img
+            class="chevron-down-icon9"
+            alt=""
+            src="./public/chevrondown1.svg"
+          />
+        </div>
+        <div class="rectangle3"></div>
+        <div class="entrada3">
+          <div class="todas3">Estoy buscando...</div>
+          <img class="search-lg-icon3" alt="" src="./public/searchlg.svg" />
+        </div>
+      </div>
+      <img
+        class="image-5-icon3"
+        alt=""
+        src="./public/image-5@2x.png"
+        id="image5"
+      />
+    </div>
+
+    <div id="popUpAgregar" class="popup-overlay" style="display: none">
+      <div class="popup-agregar">
+        <section class="right-content2">
+          <h2 class="agregar-nuevo-producto">Agregar nuevo producto</h2>
+          <div class="frame13">
+            <form class="name-group">
+              <input class="name1" placeholder="Nombre producto" type="text" />
+
+              <input class="name1" placeholder="Cantidad" type="text" />
+
+              <input class="name1" placeholder="Precio" type="text" />
+
+              <button class="button7" id="popupbutton">
+                <div class="agregar">Agregar</div>
+              </button>
+            </form>
+            <input class="name2" type="file" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function () {
+          var popup = document.getElementById("popUpAgregar");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var featuredIcon = document.getElementById("featuredIcon");
+      if (featuredIcon) {
+        featuredIcon.addEventListener("click", function (e) {
+          window.location.href = "./Login.html";
+        });
+      }
+      
+      var image5 = document.getElementById("image5");
+      if (image5) {
+        image5.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      </script>
+  </body>
+</html>

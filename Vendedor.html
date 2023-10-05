@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./Vendedor.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="vendedor">
+      <img class="vendedor-child" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="container-container">
+        <div class="container1">
+          <div class="nav-category-container">
+            <nav class="nav-category1">
+              <div class="button4" id="buttonContainer">
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/lightning01.svg"
+                />
+
+                <div class="pr1">Añadir producto nuevo</div>
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/chevrondown.svg"
+                />
+              </div>
+              <div class="button4">
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/placeholder.svg"
+                />
+
+                <div class="pr1">Registro de inventarios</div>
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/chevrondown.svg"
+                />
+              </div>
+              <div class="button4">
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/placeholder.svg"
+                />
+
+                <div class="pr1">Solicitudes de producto</div>
+                <img
+                  class="placeholder-icon"
+                  alt=""
+                  src="./public/chevrondown2.svg"
+                />
+              </div>
+              <div class="pr1">Añadir mercancía</div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <header class="header1">
+        <div class="header-item"></div>
+        <div class="text4">Fabricante - Username</div>
+      </header>
+      <section class="pie1">
+        <div class="pie-inner"></div>
+        <div class="trminos-y-condiciones-container1">
+          <p class="trminos-y-condiciones2">
+            <b class="trminos-y-condiciones3">Términos y condiciones</b>
+            <span class="span1"> </span>
+          </p>
+          <p class="todos-los-derechos1">
+            ® 2023-2023 Todos los derechos reservados
+          </p>
+        </div>
+        <img class="imagen-3-icon1" alt="" src="./public/imagen-3@2x.png" />
+
+        <img class="imagen-4-icon1" alt="" src="./public/imagen-4@2x.png" />
+
+        <div class="imagen-51"></div>
+        <div class="line-div"></div>
+      </section>
+      <img
+        class="featured-icon1"
+        alt=""
+        src="./public/featured-icon.svg"
+        id="featuredIcon"
+      />
+
+      <h1 class="inventario">Inventario</h1>
+      <div class="producto-1">Producto #1</div>
+      <div class="vendedor-item"></div>
+      <div class="editar8">Editar</div>
+      <div class="editar8">Editar</div>
+      <img class="vendedor-inner" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="producto-2">Producto #2</div>
+      <div class="vendedor-child1"></div>
+      <div class="editar10">Editar</div>
+      <div class="editar10">Editar</div>
+      <img class="vendedor-child2" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="producto-3">Producto #3</div>
+      <div class="vendedor-child3"></div>
+      <div class="editar12">Editar</div>
+      <div class="editar12">Editar</div>
+      <img class="vendedor-child4" alt="" src="./public/rectangle-33.svg" />
+
+      <div class="producto-4">Producto #4</div>
+      <div class="vendedor-child5"></div>
+      <div class="editar14">Editar</div>
+      <div class="editar14">Editar</div>
+      <div class="busqueda1">
+        <div class="categorias1">
+          <div class="todas1">Todas las categorias</div>
+          <img
+            class="chevron-down-icon5"
+            alt=""
+            src="./public/chevrondown1.svg"
+          />
+        </div>
+        <div class="rectangle1"></div>
+        <div class="entrada1">
+          <div class="todas1">Estoy buscando...</div>
+          <img class="search-lg-icon1" alt="" src="./public/searchlg.svg" />
+        </div>
+      </div>
+      <img
+        class="image-5-icon1"
+        alt=""
+        src="./public/image-5@2x.png"
+        id="image5"
+      />
+    </div>
+
+    <div id="popUpAgregar" class="popup-overlay" style="display: none">
+      <div class="popup-agregar">
+        <section class="right-content2">
+          <h2 class="agregar-nuevo-producto">Agregar nuevo producto</h2>
+          <div class="frame13">
+            <form class="name-group">
+              <input class="name1" placeholder="Nombre producto" type="text" />
+
+              <input class="name1" placeholder="Cantidad" type="text" />
+
+              <input class="name1" placeholder="Precio" type="text" />
+
+              <button class="button7" id="popupbutton">
+                <div class="agregar">Agregar</div>
+              </button>
+            </form>
+            <input class="name2" type="file" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function () {
+          var popup = document.getElementById("popUpAgregar");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var featuredIcon = document.getElementById("featuredIcon");
+      if (featuredIcon) {
+        featuredIcon.addEventListener("click", function (e) {
+          window.location.href = "./Login.html";
+        });
+      }
+      
+      var image5 = document.getElementById("image5");
+      if (image5) {
+        image5.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      </script>
+  </body>
+</html>

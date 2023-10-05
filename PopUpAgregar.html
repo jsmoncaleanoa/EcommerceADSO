@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./PopUpAgregar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="popup-agregar">
+      <section class="right-content2">
+        <h2 class="agregar-nuevo-producto">Agregar nuevo producto</h2>
+        <div class="frame13">
+          <form class="name-group">
+            <input class="name1" placeholder="Nombre producto" type="text" />
+
+            <input class="name1" placeholder="Cantidad" type="text" />
+
+            <input class="name1" placeholder="Precio" type="text" />
+
+            <button class="button7" id="popupbutton">
+              <div class="agregar">Agregar</div>
+            </button>
+          </form>
+          <input class="name2" type="file" />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      </script>
+  </body>
+</html>

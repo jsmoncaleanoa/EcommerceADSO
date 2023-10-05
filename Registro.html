@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./Register.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="register">
+      <form class="right-content3">
+        <div class="title2">
+          <b class="registro2">Registro</b>
+          <div class="registrate-para-comenzar1">Registrate para comenzar</div>
+        </div>
+        <div class="name-container">
+          <div class="name3">
+            <div class="placeholder6">
+              <div class="nombre1">Nombre</div>
+              <img
+                class="bxbxs-user-icon1"
+                alt=""
+                src="./public/bxbxsuser.svg"
+              />
+            </div>
+          </div>
+          <div class="name3">
+            <div class="placeholder7">
+              <div class="nombre1">Correro electronico</div>
+              <img class="codiconmail2" alt="" src="./public/codiconmail.svg" />
+            </div>
+          </div>
+          <div class="name3">
+            <div class="placeholder8">
+              <div class="nombre1">Celular</div>
+              <img
+                class="codiconmail2"
+                alt=""
+                src="./public/codiconmail1.svg"
+              />
+            </div>
+          </div>
+          <div class="name3">
+            <div class="placeholder9">
+              <div class="nombre1">Contraseña</div>
+              <img
+                class="codiconmail2"
+                alt=""
+                src="./public/bxbxslockalt.svg"
+              />
+            </div>
+          </div>
+          <div class="name3">
+            <div class="placeholder10">
+              <div class="confirmar-contrasea1">Confirmar Contraseña</div>
+              <img
+                class="codiconmail2"
+                alt=""
+                src="./public/bxbxslockalt.svg"
+              />
+            </div>
+          </div>
+          <div class="button13" id="buttonContainer">
+            <div class="placeholder11">
+              <div class="registrar1">Registrar</div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <img class="register-child" alt="" src="./public/ellipse-2.svg" />
+
+      <img class="register-item" alt="" src="./public/ellipse-2.svg" />
+
+      <img class="register-inner" alt="" src="./public/line-1.svg" />
+
+      <div class="left-content">
+        <div class="bg2"></div>
+      </div>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./Principal.html";
+        });
+      }
+      </script>
+  </body>
+</html>
